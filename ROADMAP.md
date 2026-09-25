@@ -37,7 +37,7 @@ agreed before application work starts.
   metadata and an importable package skeleton.
 - [x] **Step 1.3 — Add development quality tools.** Configure formatting,
   linting, and static type checking with the smallest useful rule set.
-- [ ] **Step 1.4 — Add the first pytest smoke test.** Establish test discovery and
+- [x] **Step 1.4 — Add the first pytest smoke test.** Establish test discovery and
   a repeatable local quality command.
 - [ ] **Step 1.5 — Create the minimal FastAPI application.** Add an app factory or
   application entry point and a simple health endpoint.
