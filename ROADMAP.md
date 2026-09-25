@@ -43,7 +43,7 @@ agreed before application work starts.
   application entry point and a simple health endpoint.
 - [x] **Step 1.6 — Test the health endpoint.** Use FastAPI's test client to verify
   the first API contract without starting a real server.
-- [ ] **Step 1.7 — Document the local developer workflow.** Record setup, run,
+- [x] **Step 1.7 — Document the local developer workflow.** Record setup, run,
   quality, and test commands in `README.md`.
 
 **Phase outcome:** a typed, testable minimal API can be run locally with a clear
