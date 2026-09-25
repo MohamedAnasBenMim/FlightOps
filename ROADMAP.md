@@ -32,7 +32,7 @@ agreed before application work starts.
 - [x] **Step 1.1 — Initialize version control and repository hygiene.** Verify or
   initialize Git, choose the initial branch convention, and add a Python-focused
   `.gitignore` without adding application code.
-- [ ] **Step 1.2 — Create the minimal Python project configuration.** Choose a
+- [x] **Step 1.2 — Create the minimal Python project configuration.** Choose a
   supported Python version and dependency-management approach; add project
   metadata and an importable package skeleton.
 - [ ] **Step 1.3 — Add development quality tools.** Configure formatting,
