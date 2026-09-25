@@ -39,7 +39,7 @@ agreed before application work starts.
   linting, and static type checking with the smallest useful rule set.
 - [x] **Step 1.4 — Add the first pytest smoke test.** Establish test discovery and
   a repeatable local quality command.
-- [ ] **Step 1.5 — Create the minimal FastAPI application.** Add an app factory or
+- [x] **Step 1.5 — Create the minimal FastAPI application.** Add an app factory or
   application entry point and a simple health endpoint.
 - [ ] **Step 1.6 — Test the health endpoint.** Use FastAPI's test client to verify
   the first API contract without starting a real server.
