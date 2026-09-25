@@ -35,7 +35,7 @@ agreed before application work starts.
 - [x] **Step 1.2 — Create the minimal Python project configuration.** Choose a
   supported Python version and dependency-management approach; add project
   metadata and an importable package skeleton.
-- [ ] **Step 1.3 — Add development quality tools.** Configure formatting,
+- [x] **Step 1.3 — Add development quality tools.** Configure formatting,
   linting, and static type checking with the smallest useful rule set.
 - [ ] **Step 1.4 — Add the first pytest smoke test.** Establish test discovery and
   a repeatable local quality command.
