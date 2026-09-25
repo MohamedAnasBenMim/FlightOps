@@ -41,7 +41,7 @@ agreed before application work starts.
   a repeatable local quality command.
 - [x] **Step 1.5 — Create the minimal FastAPI application.** Add an app factory or
   application entry point and a simple health endpoint.
-- [ ] **Step 1.6 — Test the health endpoint.** Use FastAPI's test client to verify
+- [x] **Step 1.6 — Test the health endpoint.** Use FastAPI's test client to verify
   the first API contract without starting a real server.
 - [ ] **Step 1.7 — Document the local developer workflow.** Record setup, run,
   quality, and test commands in `README.md`.
