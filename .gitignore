@@ -40,3 +40,9 @@ Thumbs.db
 
 # Local logs
 *.log
+
+# Frontend artifacts
+frontend/node_modules/
+frontend/dist/
+flightops.db
+*.tsbuildinfo

@@ -2,8 +2,8 @@
 
 ## Status
 
-Draft for review. This document defines the intended MVP; it is not a claim that
-the listed capabilities have already been implemented.
+Local MVP implemented through Phase 10. AWS deployment has not started. The scope below
+defines the implemented capabilities and remaining deployment boundary.
 
 ## Problem
 
@@ -94,6 +94,7 @@ The MVP includes:
   recommendation of contiguous suitable windows.
 - PostgreSQL persistence through SQLAlchemy and Alembic migrations.
 - A documented FastAPI REST interface and consistent error responses.
+- A Vue 3 and TypeScript dashboard for the core planning and assessment workflow.
 - Unit tests for domain rules and focused integration tests for persistence,
   provider adaptation, and API behavior.
 - Local execution using Docker Compose.
@@ -120,7 +121,7 @@ certified aviation standards.
 - Live vehicle control, telemetry ingestion, autopilot integration, or route
   execution.
 - Authentication, authorization, user accounts, or multi-tenancy.
-- A web or mobile frontend.
+- Native mobile applications or offline operation.
 - AI, machine learning, probabilistic risk scoring, or LLM-generated decisions.
 - Microservices, event-driven infrastructure, or background job orchestration.
 - No-fly-zone or restricted-airspace analysis.
@@ -184,6 +185,7 @@ committing to folders.
 | --- | --- | --- |
 | Language | Python | Strong ecosystem for APIs, validation, testing, and data transformation. |
 | HTTP API | FastAPI | Typed REST endpoints, dependency injection, and generated OpenAPI documentation. |
+| Frontend | Vue 3 and TypeScript | A typed, reactive operator dashboard with a small production bundle. |
 | Validation | Pydantic | Boundary validation and serialization integrated with FastAPI. |
 | ORM | SQLAlchemy | Explicit relational mapping, sessions, transactions, and mature PostgreSQL support. |
 | Schema migrations | Alembic | Versioned and repeatable database schema evolution. |
@@ -270,7 +272,7 @@ Only after the core MVP is complete and understood:
 
 - PostGIS-backed geospatial storage and querying.
 - AWS CDK infrastructure as code.
-- A React and TypeScript route-planning interface.
+- Advanced Vue route visualization and map interaction.
 - Map-based route and assessment visualization.
 - Redis caching for carefully measured provider or query bottlenecks.
 - Background jobs for long-running or scheduled reassessments.
