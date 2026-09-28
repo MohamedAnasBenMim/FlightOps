@@ -39,6 +39,8 @@ jobs:
       - run: ruff format --check .
       - run: ruff check .
       - run: mypy
+      - run: cfn-lint deploy/aws/bootstrap.yml deploy/aws/infrastructure.yml
+      - run: bash -n deploy/aws/*.sh
       - run: pytest -q --cov=flightops --cov-report=term-missing
 
   frontend:

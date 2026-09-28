@@ -2,7 +2,8 @@
 
 ## Status
 
-Local MVP implemented through Phase 10. AWS deployment has not started. The scope below
+Local MVP and AWS deployment automation are complete. Live AWS provisioning awaits valid credentials. The scope below
+
 defines the implemented capabilities and remaining deployment boundary.
 
 ## Problem

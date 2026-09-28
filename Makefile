@@ -1,4 +1,4 @@
-.PHONY: quality test frontend compose-up migrate
+.PHONY: quality test infra frontend compose-up migrate
 
 quality:
 	.venv/bin/ruff format --check .
@@ -7,6 +7,10 @@ quality:
 
 test:
 	.venv/bin/pytest -q
+
+infra:
+	.venv/bin/cfn-lint deploy/aws/bootstrap.yml deploy/aws/infrastructure.yml
+	bash -n deploy/aws/*.sh
 
 frontend:
 	cd frontend && npm test && npm run build

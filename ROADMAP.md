@@ -14,7 +14,7 @@ A checkbox may be marked complete only when:
 - the relevant checks pass (or the step is documentation-only);
 - the student can explain the important decision and tradeoff.
 
-Status: **local MVP complete through Phase 10; paused before Phase 11 deployment**.
+Status: **deployment-ready; live AWS provisioning is blocked by invalid credentials**.
 
 ## Phase 0 — Agree on the project plan
 
@@ -240,7 +240,7 @@ and demonstrable.
 
 ## Phase 11 — Deploy the MVP to AWS
 
-- [ ] **Step 11.1 — Produce the AWS deployment design and cost estimate.** Define
+- [x] **Step 11.1 — Produce the AWS deployment design and cost estimate.** Define
   networking, environments, secrets, IAM boundaries, migration strategy,
   rollback, and expected portfolio-scale costs before provisioning.
 - [ ] **Step 11.2 — Provision ECR and publish a versioned image.** Use immutable
@@ -258,7 +258,7 @@ and demonstrable.
 - [ ] **Step 11.8 — Perform deployment smoke and failure tests.** Verify health,
   the core assessment workflow, log visibility, restart behavior, and database
   persistence.
-- [ ] **Step 11.9 — Document deployment and rollback.** Record operations,
+- [x] **Step 11.9 — Document deployment and rollback.** Record operations,
   configuration, cost controls, limitations, and teardown instructions.
 
 **Phase outcome:** the tested API runs on ECS Fargate with RDS PostgreSQL,
@@ -266,17 +266,17 @@ versioned images in ECR, HTTPS access, and useful CloudWatch visibility.
 
 ## Phase 12 — Final portfolio review
 
-- [ ] **Step 12.1 — Audit the MVP against `PROJECT.md`.** Confirm every claimed
+- [x] **Step 12.1 — Audit the MVP against `PROJECT.md`.** Confirm every claimed
   capability exists and remove or label anything incomplete.
-- [ ] **Step 12.2 — Review architecture and code quality.** Check dependency
+- [x] **Step 12.2 — Review architecture and code quality.** Check dependency
   boundaries, naming, typing, migrations, tests, and unresolved technical debt.
-- [ ] **Step 12.3 — Review reliability and security basics.** Check secrets,
+- [x] **Step 12.3 — Review reliability and security basics.** Check secrets,
   dependency findings, container privileges, IAM, database exposure, and error
   leakage.
-- [ ] **Step 12.4 — Prepare the portfolio demonstration.** Create a reproducible
+- [x] **Step 12.4 — Prepare the portfolio demonstration.** Create a reproducible
   scenario that shows aircraft setup, a route assessment, explanations, and a
   recommended window.
-- [ ] **Step 12.5 — Prepare interview explanations.** Summarize key tradeoffs,
+- [x] **Step 12.5 — Prepare interview explanations.** Summarize key tradeoffs,
   alternatives rejected, difficult bugs, testing strategy, and future scaling
   choices.
 

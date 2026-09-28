@@ -25,7 +25,7 @@ forecast used for the decision, and recommends suitable departure windows.
 - Non-root production containers, Docker Compose, and GitHub Actions CI.
 - Structured request logs plus separate liveness and readiness endpoints.
 
-AWS deployment is deliberately not provisioned yet.
+AWS deployment automation is ready, but live provisioning requires valid AWS credentials and explicit cost acceptance.
 
 ## Architecture
 
@@ -108,7 +108,7 @@ npm ci
 npm run dev
 ~~~
 
-Vite proxies /api and /health to <http://localhost:18000>. To call another API
+Vite proxies /api and /health to <http://localhost:8000>. To call another API
 origin, set VITE_API_BASE_URL before building.
 
 ~~~bash
@@ -152,10 +152,19 @@ Rule version 2026-01 uses these deterministic policies:
 
 These are transparent prototype rules, not regulatory or manufacturer guidance.
 
+## AWS deployment
+
+Review docs/DEPLOYMENT.md before provisioning. The expected us-east-1 portfolio cost is approximately $48–65 per month before tax and unusual traffic. The deployment script requires valid AWS credentials, a clean Git worktree, and CONFIRM_AWS_COSTS=YES. Infrastructure templates are validated in CI; no live AWS resources have been created from this repository yet.
+
 ## Documentation
 
 - [PROJECT.md](PROJECT.md) — product boundary and success criteria
 - [ROADMAP.md](ROADMAP.md) — implementation progress and next deployment phase
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — component and data-flow design
 - [docs/API.md](docs/API.md) — API examples and errors
+- [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) — AWS design, costs, deployment, rollback, and teardown
+- [docs/SECURITY.md](docs/SECURITY.md) — implemented controls and accepted MVP risks
+- [docs/DEMO.md](docs/DEMO.md) — reproducible portfolio demonstration
+- [docs/INTERVIEW_GUIDE.md](docs/INTERVIEW_GUIDE.md) — architecture and tradeoff explanations
+- [docs/PORTFOLIO_AUDIT.md](docs/PORTFOLIO_AUDIT.md) — claim-by-claim completion audit
 - [AGENTS.md](AGENTS.md) — contribution and learning workflow

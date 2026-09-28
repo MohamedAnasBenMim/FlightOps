@@ -24,7 +24,7 @@ def build_engine(database_url: str) -> Engine:
     return engine
 
 
-engine = build_engine(get_settings().database_url)
+engine = build_engine(get_settings().resolved_database_url)
 SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)
 
 
